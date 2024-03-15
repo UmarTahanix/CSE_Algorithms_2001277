@@ -1,0 +1,41 @@
+function main():
+        //Initialize a vector with numbers 1 to 9.
+        //Make a vector for square with size 3*3. (size = 3)
+        //Make a vector "used" for boolean values to mark whether the value is used or not in the permutation.
+        //Execute function permutation taking parameters: numbers, square, used, and index with value 0.
+        //Output number of the ways to fill the program.
+        //Extra: Output the number of steps executed in permutation function.
+
+function permutation(numbers, square, used, index):
+        //Extra: Increment the steps
+        //if index equals 3*3 do:
+        //        if square is magic square (execute isMagicSquare function) do:
+        //                print the square
+        //        return the function
+        //for i <- 0 to 8 do:
+        //        if the number isn't used before do:
+        //                square[index] takes value of numbers[i]
+        //                used[i] takes true value to mark the value as used so not to be used again in the current square
+        //                execute permutation function with index incremented by 1
+        //                After the current square, used[i] takes false value to use the number again in the next square
+
+function isMagicSquare(square):
+        //value <- square[0] + square[1] + square[2]
+        //for i <- 0 to size - 1 do:
+        //        sum_row <- 0, sum_col <- 0
+        //        for j <- 0 to size - 1 do:
+        //                add the current value of sum_row with square[i*size + j] to sum_row
+        //                add the current value of sum_col with square[j*size + i] to sum_col
+        //        if either sum_row or sum_col isn't equal to value do:
+        //                return false
+        //
+        //sum_diagonal <- 0, sum_diagonal_anti <- 0
+        //for i <- 0 to size - 1 do:
+        //        add the current value of sum_diagonal with square[i*(size + 1)] to sum_diagonal
+        //        add the current value of sum_diagonal_anti with square[2*(i+1)] to sum_diagonal_anti
+        //if either sum_diagonal or sum_diagonal_anti isn't equal to value do:
+        //        return false
+        //return true
+
+function printSquare(square):
+        //Output the magic square
